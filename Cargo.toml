@@ -7,12 +7,12 @@ description = "announce which resources you need on collaboratively used linux h
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-sheets = "0.4"
+# sheets = "0.4"
 clap = { version = "4", features = [ "derive" ] }
-google-authz = "0.0.2"
+# google-authz = "0.0.2"
 dateparser = "0.2"
 duration-str = "0.5"
-chrono = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 serde_yaml = "0.9"
